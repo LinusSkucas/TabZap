@@ -31,6 +31,29 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
     override func toolbarItemClicked(in window: SFSafariWindow) {
         os_log(.default, "The extension's toolbar item was clicked")
+        Task {
+            var tabList = [(URL, SFSafariTab)]()
+            let tabs = await window.allTabs()
+            for tab in tabs {
+                if let page = await tab.activePage(),
+                   let pageProperties = await page.properties(),
+                   let url = pageProperties.url {
+                    tabList.append((url, tab))
+                }
+            }
+            
+            // Compare and close tabs
+            let crossReference = Dictionary(grouping: tabList, by: \.0)
+            crossReference
+                .filter {
+                    $1.count > 1
+                }
+                .forEach { (url, tabs) in
+                    tabs.dropFirst().forEach { (_, tab) in
+                        tab.close()
+                    }
+                }
+        }
     }
 
     override func validateToolbarItem(in window: SFSafariWindow, validationHandler: @escaping ((Bool, String) -> Void)) {
