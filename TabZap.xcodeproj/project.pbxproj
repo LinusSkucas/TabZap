@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		157FE73F2B5B849B00DB5185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FE73E2B5B849B00DB5185 /* AppDelegate.swift */; };
+		157FE7432B5B849B00DB5185 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 157FE7412B5B849B00DB5185 /* Main.html */; };
+		157FE7452B5B849B00DB5185 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 157FE7442B5B849B00DB5185 /* Icon.png */; };
+		157FE7472B5B849B00DB5185 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 157FE7462B5B849B00DB5185 /* Style.css */; };
+		157FE7492B5B849B00DB5185 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 157FE7482B5B849B00DB5185 /* Script.js */; };
+		157FE74B2B5B849B00DB5185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FE74A2B5B849B00DB5185 /* ViewController.swift */; };
+		157FE74E2B5B849B00DB5185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157FE74C2B5B849B00DB5185 /* Main.storyboard */; };
+		157FE7502B5B849C00DB5185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157FE74F2B5B849C00DB5185 /* Assets.xcassets */; };
+		157FE7582B5B849C00DB5185 /* TabZap Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 157FE7572B5B849C00DB5185 /* TabZap Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		157FE75D2B5B849C00DB5185 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FE75C2B5B849C00DB5185 /* SafariExtensionHandler.swift */; };
+		157FE75F2B5B849C00DB5185 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FE75E2B5B849C00DB5185 /* SafariExtensionViewController.swift */; };
+		157FE7622B5B849C00DB5185 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 157FE7612B5B849C00DB5185 /* script.js */; };
+		157FE7642B5B849C00DB5185 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 157FE7632B5B849C00DB5185 /* ToolbarItemIcon.pdf */; };
+		157FE7672B5B849C00DB5185 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157FE7652B5B849C00DB5185 /* SafariExtensionViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		157FE7592B5B849C00DB5185 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 157FE7332B5B849B00DB5185 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 157FE7562B5B849C00DB5185;
+			remoteInfo = "TabZap Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		157FE76F2B5B849C00DB5185 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				157FE7582B5B849C00DB5185 /* TabZap Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		157FE73B2B5B849B00DB5185 /* TabZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		157FE73E2B5B849B00DB5185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		157FE7422B5B849B00DB5185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		157FE7442B5B849B00DB5185 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		157FE7462B5B849B00DB5185 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		157FE7482B5B849B00DB5185 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		157FE74A2B5B849B00DB5185 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		157FE74D2B5B849B00DB5185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		157FE74F2B5B849C00DB5185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		157FE7512B5B849C00DB5185 /* TabZap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TabZap.entitlements; sourceTree = "<group>"; };
+		157FE7522B5B849C00DB5185 /* TabZap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TabZap.entitlements; sourceTree = "<group>"; };
+		157FE7572B5B849C00DB5185 /* TabZap Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TabZap Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		157FE75C2B5B849C00DB5185 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		157FE75E2B5B849C00DB5185 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		157FE7612B5B849C00DB5185 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		157FE7632B5B849C00DB5185 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		157FE7662B5B849C00DB5185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		157FE7682B5B849C00DB5185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157FE7692B5B849C00DB5185 /* TabZap_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TabZap_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		157FE7382B5B849B00DB5185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157FE7542B5B849C00DB5185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		157FE7322B5B849B00DB5185 = {
+			isa = PBXGroup;
+			children = (
+				157FE73D2B5B849B00DB5185 /* TabZap */,
+				157FE75B2B5B849C00DB5185 /* TabZap Extension */,
+				157FE73C2B5B849B00DB5185 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		157FE73C2B5B849B00DB5185 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				157FE73B2B5B849B00DB5185 /* TabZap.app */,
+				157FE7572B5B849C00DB5185 /* TabZap Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		157FE73D2B5B849B00DB5185 /* TabZap */ = {
+			isa = PBXGroup;
+			children = (
+				157FE73E2B5B849B00DB5185 /* AppDelegate.swift */,
+				157FE74A2B5B849B00DB5185 /* ViewController.swift */,
+				157FE74C2B5B849B00DB5185 /* Main.storyboard */,
+				157FE74F2B5B849C00DB5185 /* Assets.xcassets */,
+				157FE7512B5B849C00DB5185 /* TabZap.entitlements */,
+				157FE7522B5B849C00DB5185 /* TabZap.entitlements */,
+				157FE7402B5B849B00DB5185 /* Resources */,
+			);
+			path = TabZap;
+			sourceTree = "<group>";
+		};
+		157FE7402B5B849B00DB5185 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				157FE7412B5B849B00DB5185 /* Main.html */,
+				157FE7442B5B849B00DB5185 /* Icon.png */,
+				157FE7462B5B849B00DB5185 /* Style.css */,
+				157FE7482B5B849B00DB5185 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		157FE75B2B5B849C00DB5185 /* TabZap Extension */ = {
+			isa = PBXGroup;
+			children = (
+				157FE75C2B5B849C00DB5185 /* SafariExtensionHandler.swift */,
+				157FE75E2B5B849C00DB5185 /* SafariExtensionViewController.swift */,
+				157FE7652B5B849C00DB5185 /* SafariExtensionViewController.xib */,
+				157FE7682B5B849C00DB5185 /* Info.plist */,
+				157FE7692B5B849C00DB5185 /* TabZap_Extension.entitlements */,
+				157FE7602B5B849C00DB5185 /* Resources */,
+			);
+			path = "TabZap Extension";
+			sourceTree = "<group>";
+		};
+		157FE7602B5B849C00DB5185 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				157FE7612B5B849C00DB5185 /* script.js */,
+				157FE7632B5B849C00DB5185 /* ToolbarItemIcon.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		157FE73A2B5B849B00DB5185 /* TabZap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 157FE7702B5B849C00DB5185 /* Build configuration list for PBXNativeTarget "TabZap" */;
+			buildPhases = (
+				157FE7372B5B849B00DB5185 /* Sources */,
+				157FE7382B5B849B00DB5185 /* Frameworks */,
+				157FE7392B5B849B00DB5185 /* Resources */,
+				157FE76F2B5B849C00DB5185 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				157FE75A2B5B849C00DB5185 /* PBXTargetDependency */,
+			);
+			name = TabZap;
+			productName = TabZap;
+			productReference = 157FE73B2B5B849B00DB5185 /* TabZap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		157FE7562B5B849C00DB5185 /* TabZap Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 157FE76C2B5B849C00DB5185 /* Build configuration list for PBXNativeTarget "TabZap Extension" */;
+			buildPhases = (
+				157FE7532B5B849C00DB5185 /* Sources */,
+				157FE7542B5B849C00DB5185 /* Frameworks */,
+				157FE7552B5B849C00DB5185 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TabZap Extension";
+			productName = "TabZap Extension";
+			productReference = 157FE7572B5B849C00DB5185 /* TabZap Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		157FE7332B5B849B00DB5185 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					157FE73A2B5B849B00DB5185 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					157FE7562B5B849C00DB5185 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 157FE7362B5B849B00DB5185 /* Build configuration list for PBXProject "TabZap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 157FE7322B5B849B00DB5185;
+			productRefGroup = 157FE73C2B5B849B00DB5185 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				157FE73A2B5B849B00DB5185 /* TabZap */,
+				157FE7562B5B849C00DB5185 /* TabZap Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		157FE7392B5B849B00DB5185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157FE7452B5B849B00DB5185 /* Icon.png in Resources */,
+				157FE74E2B5B849B00DB5185 /* Main.storyboard in Resources */,
+				157FE7492B5B849B00DB5185 /* Script.js in Resources */,
+				157FE7432B5B849B00DB5185 /* Main.html in Resources */,
+				157FE7502B5B849C00DB5185 /* Assets.xcassets in Resources */,
+				157FE7472B5B849B00DB5185 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157FE7552B5B849C00DB5185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157FE7672B5B849C00DB5185 /* SafariExtensionViewController.xib in Resources */,
+				157FE7642B5B849C00DB5185 /* ToolbarItemIcon.pdf in Resources */,
+				157FE7622B5B849C00DB5185 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		157FE7372B5B849B00DB5185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157FE74B2B5B849B00DB5185 /* ViewController.swift in Sources */,
+				157FE73F2B5B849B00DB5185 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157FE7532B5B849C00DB5185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157FE75F2B5B849C00DB5185 /* SafariExtensionViewController.swift in Sources */,
+				157FE75D2B5B849C00DB5185 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		157FE75A2B5B849C00DB5185 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 157FE7562B5B849C00DB5185 /* TabZap Extension */;
+			targetProxy = 157FE7592B5B849C00DB5185 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		157FE7412B5B849B00DB5185 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157FE7422B5B849B00DB5185 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		157FE74C2B5B849B00DB5185 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157FE74D2B5B849B00DB5185 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		157FE7652B5B849C00DB5185 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157FE7662B5B849C00DB5185 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		157FE76A2B5B849C00DB5185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		157FE76B2B5B849C00DB5185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		157FE76D2B5B849C00DB5185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TabZap Extension/TabZap_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39UWSCXL32;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TabZap Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TabZap Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.TabZap.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		157FE76E2B5B849C00DB5185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TabZap Extension/TabZap_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39UWSCXL32;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TabZap Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TabZap Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.TabZap.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		157FE7712B5B849C00DB5185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TabZap/TabZap.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39UWSCXL32;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TabZap;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.TabZap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		157FE7722B5B849C00DB5185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TabZap/TabZap.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39UWSCXL32;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TabZap;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sh.linus.TabZap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		157FE7362B5B849B00DB5185 /* Build configuration list for PBXProject "TabZap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157FE76A2B5B849C00DB5185 /* Debug */,
+				157FE76B2B5B849C00DB5185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		157FE76C2B5B849C00DB5185 /* Build configuration list for PBXNativeTarget "TabZap Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157FE76D2B5B849C00DB5185 /* Debug */,
+				157FE76E2B5B849C00DB5185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		157FE7702B5B849C00DB5185 /* Build configuration list for PBXNativeTarget "TabZap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157FE7712B5B849C00DB5185 /* Debug */,
+				157FE7722B5B849C00DB5185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 157FE7332B5B849B00DB5185 /* Project object */;
+}
